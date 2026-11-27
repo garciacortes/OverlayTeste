@@ -31,7 +31,6 @@ function createPair(item, index) {
   giftImg.onerror = () => console.warn("Não foi possível carregar:", item.presente);
   const giftCaption = document.createElement("span");
   giftCaption.className = "caption";
-  giftCaption.textContent = "Presente";
   gift.append(giftImg, giftCaption);
 
   const arrow = document.createElement("div");
@@ -47,7 +46,6 @@ function createPair(item, index) {
   actionImg.onerror = () => console.warn("Não foi possível carregar:", item.acao);
   const actionCaption = document.createElement("span");
   actionCaption.className = "caption";
-  actionCaption.textContent = "Ação";
   action.append(actionImg, actionCaption);
 
   inner.append(number, gift, arrow, action);
