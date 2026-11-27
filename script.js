@@ -28,7 +28,8 @@ function createPair(item, index) {
   giftImg.src = item.presente;
   giftImg.alt = "Presente";
   giftImg.draggable = false;
-  giftImg.onerror = () => console.warn("Não foi possível carregar:", item.presente);
+  giftImg.onerror = () =>
+    console.warn("Não foi possível carregar:", item.presente);
   const giftCaption = document.createElement("span");
   giftCaption.className = "caption";
   gift.append(giftImg, giftCaption);
@@ -43,7 +44,8 @@ function createPair(item, index) {
   actionImg.src = item.acao;
   actionImg.alt = "Ação Minecraft";
   actionImg.draggable = false;
-  actionImg.onerror = () => console.warn("Não foi possível carregar:", item.acao);
+  actionImg.onerror = () =>
+    console.warn("Não foi possível carregar:", item.acao);
   const actionCaption = document.createElement("span");
   actionCaption.className = "caption";
   action.append(actionImg, actionCaption);
@@ -75,7 +77,7 @@ function tuneSpeed() {
   const pixelsPerSecond = 62;
   document.documentElement.style.setProperty(
     "--scroll-duration",
-    Math.max(48, width / pixelsPerSecond) + "s"
+    Math.max(48, width / pixelsPerSecond) + "s",
   );
 }
 new ResizeObserver(tuneSpeed).observe(document.querySelector(".viewport"));
