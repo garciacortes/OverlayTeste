@@ -12,6 +12,16 @@
 
 const PRESENTES = [
   {
+    "presente": "assets/presentes/Seguir.webp",
+    "acao": "assets/acoes/Seguir.webp",
+    "nome": "Seguidor Novo"
+  },
+  {
+    "presente": "assets/presentes/Likes.webp",
+    "acao": "assets/acoes/Likes.webp",
+    "nome": "Zombie Likes"
+  },
+  {
     "presente": "assets/presentes/Rosa.webp",
     "acao": "assets/acoes/Rosa_acao.png",
     "nome": "Zumbi Armadura"
