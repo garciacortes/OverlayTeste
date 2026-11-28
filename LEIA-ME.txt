@@ -1,0 +1,22 @@
+OVERLAY MINECRAFT — PERFORMANCE
+
+Esta pasta está pronta para usar no OBS ou TikTok Live Studio.
+
+INSTALAÇÃO
+1. Mantenha esta pasta em um local permanente.
+2. No OBS ou TikTok Live Studio, adicione uma fonte Navegador.
+3. Selecione index.html como arquivo local.
+4. Use 1920 x 1080 e mantenha a fonte acima do jogo.
+5. Mantenha index.html, config.js, script.js, style.css e a pasta assets juntos.
+
+CONFIGURAÇÃO
+Edite config.js para mudar imagens, nomes e ordem. Preserve os diretórios assets/presentes e assets/acoes e os nomes de arquivo indicados.
+
+AJUSTES DE DESEMPENHO
+- PNGs reduzidos para até 136 x 122 px, mantendo transparência e proporção.
+- Cards construídos uma vez; o conjunto duplicado mantém a rolagem contínua.
+- Imagens carregadas e decodificadas antes da rolagem começar, para não aparecerem pela metade durante a passagem.
+- A rolagem não começa enquanto as imagens não estiverem prontas. O carregamento inicial pode levar alguns instantes.
+- Mantidos paleta, dimensões, molduras, sequência e animação do overlay.
+
+O pacote inclui os 74 arquivos de assets. Para adicionar imagens próprias, use PNG/WebP com transparência e atualize os caminhos em config.js.
